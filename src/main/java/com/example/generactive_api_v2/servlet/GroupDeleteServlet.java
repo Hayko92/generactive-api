@@ -53,6 +53,7 @@ public class GroupDeleteServlet extends HttpServlet {
             resp.setContentType("application/json");
             PrintWriter writer = resp.getWriter();
             writer.write(objectMapper.writeValueAsString(group));
+
         } catch (Exception e) {
             resp.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE, "WRONG ID");
 
